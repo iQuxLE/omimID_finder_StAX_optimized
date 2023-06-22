@@ -1,30 +1,30 @@
 takes an input list like
 
+## Variant Data
 
-chr	start	alleleID	Ref.	Alt.	
-1	1273909	359205	G	GGCATTGGC	
-1	1167897	442612	G	A	
-1	986689	495050	C	CT	
-1	2160296	972622	T	G	
-1	1747228	904274	T	G	
-1	2160296	972622	T	G	
-1	1737951	973154	C	T	
-1	1737952	226500	C	T	
-1	899892	916564	C	A	
-1	899892	916564	C	A	
-1	989860	1694285	A	G	
+The following table displays a list of genetic variants obtained from the input file. Each variant is associated with specific information such as chromosome, start position, allele ID, reference allele (Ref.), alternative allele (Alt.), and the corresponding OMIM ID (Online Mendelian Inheritance in Man).
 
-outputs
+This data is extracted from a XML file using a parsing script. The purpose of this script is to identify and retrieve relevant information about genetic variants and their associated OMIM IDs.
 
-chr	start	alleleID	Ref.	Alt.	OMIM ID
-1	1273909	359205	G	GGCATTGGC	300912
-1	1167897	442612	G	A	176270
-1	986689	495050	C	CT	616580
-1	2160296	972622	T	G	182212
-1	1747228	904274	T	G	618386
-1	2160296	972622	T	G	300968
-1	1737951	973154	C	T	616973
-1	1737952	226500	C	T	605130
-1	899892	916564	C	A	189960
-1	899892	916564	C	A	189960
-1	989860	1694285	A	G	219800
+### Input Data
+
+The input file used for parsing the variants is `input_file.txt`. It contains the following variants:
+
+| chr | start   | alleleID | Ref. | Alt.     |
+| --- | ------- | -------- | ---- | -------- |
+| 1   | 1273909 | 359205   | G    | GGCATTGGC |
+| 1   | 1167897 | 442612   | G    | A        |
+| 1   | 986689  | 495050   | C    | CT       |
+| ... (remaining variants) |
+
+### Output Data
+
+The parsed variants are matched with their corresponding OMIM IDs, resulting in the following table:
+
+| chr | start   | alleleID | Ref. | Alt.     | OMIM ID |
+| --- | ------- | -------- | ---- | -------- | ------- |
+| 1   | 1273909 | 359205   | G    | GGCATTGGC | 300912  |
+| 1   | 1167897 | 442612   | G    | A        | 176270  |
+| 1   | 986689  | 495050   | C    | CT       | 616580  |
+| ... (remaining variants) |
+
