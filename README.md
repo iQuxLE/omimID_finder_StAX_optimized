@@ -1,4 +1,3 @@
-takes an input list like
 
 ## Variant Data
 
